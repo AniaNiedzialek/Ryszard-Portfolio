@@ -1,0 +1,13 @@
+#intro-1 {
+    background-color: greenyellow;
+    text-align: left;
+}
+
+.intro {
+    color: green;
+    border: solid red;
+}
+
+.list {
+    font-style: italic;
+}
