@@ -11,3 +11,14 @@
 .list {
     font-style: italic;
 }
+
+.my-introduction {
+    font-size: large;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.skills {
+    color: pink;
+    background-color: purple;
+}
