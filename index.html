@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     <link href="styles.css" rel="stylesheet">
+    <link href="design.css" rel="stylesheet">
     <!-- <script src="script.js" defer></script> -->
 
     
@@ -21,24 +22,62 @@
 
 <!-- <button onclick="myFunction()">O Mnie</button> -->
 
+
     <main class="page-content">
 
         <section class="my-introduction">
-            <h1>Ryszard Niedziałek</h1>
+            <h1 id="landing-info">Ryszard <br> Niedziałek</h1>
             <hr>
-            <img class="intro" id="profile-pic" src="resources/profile.jpg" alt = "moje_profilowe"  >
-            <p class="intro" id="intro-1">Jestem studentem drugiego roku na kierunku Inżynieria systemów bezzałogowych na WAT.</p>
+
+            <section class="text-scroller-section">
+                <div class="text-scroller">
+                    <a class="scroller-word" href="#about">O Mnie</a>
+                    <a class="scroller-word" href="#projects">Projekty</a>
+                    <a class="scroller-word" href="#skills">Umiejętności</a>
+                    <a class="scroller-word" href="#contact">Kontakt</a>
+                </div>
+            </section>
+            <hr>
+            <!-- <img class="intro" id="profile-pic" src="resources/profile.jpg" alt = "moje_profilowe"  > -->
+            <section id="about" class="my-introduction">
+                <h3>Kim Jestem?</h3>
+            <p class="intro" id="intro-1">Student: Inżynieria systemów bezzałogowych na WAT.</p>
             <p>Pasjonuję się projektowaniem, analizą i optymalizacją rozwiązań dla dronów, robotów mobilnych 
                 oraz inteligentnych systemów sterowania. Moje zainteresowania obejmują programowanie, elektronikę,
                 automatykę oraz integrację nowoczesnych sensorów z oprogramowaniem. W portfolio prezentuję projekty, 
                 w których realizuję swoją wizję innowacyjnych rozwiązań w obszarze bezzałogowych systemów technicznych, 
                 z naciskiem na funkcjonalność, precyzję i efektywność. </p><br>
                 <p>Zapraszam do zapoznania się z moim portfolio, które ilustruje moje umiejętności i podejście do projektowania
-                    systemów bezzałogowych.</p>
+                    systemów bezzałogowych.</p></section>
             </section>
-        
+            <hr>
+            <section id="projects" class="projects">
+                <h3>Projekty</h3>
+                <p>Oto niektóre z projektów, nad którymi pracowałem:</p>
+                <ul>
+                    <li>Projekt Drona Wyścigowego
+                        <ul class="list">
+                            <li>Projektowanie i budowa drona wyścigowego o wysokiej wydajności.</li>
+                            <li>Optymalizacja aerodynamiki i systemu sterowania.</li>
+                        </ul>
+                    </li>
+                    <li>Robot Mobilny do Inspekcji
+                        <ul class="list">
+                            <li>Projektowanie robota mobilnego do inspekcji infrastruktury.</li>
+                            <li>Integracja sensorów i systemu nawigacji.</li>
+                        </ul>
+                    </li>
+                    <li>Inteligentny System Sterowania
+                        <ul class="list">
+                            <li>Projektowanie inteligentnego systemu sterowania dla autonomicznych pojazdów.</li>
+                            <li>Implementacja algorytmów uczenia maszynowego.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        <hr>
 
-        <section class="skills">
+        <section id="skills" class="skills">
 
             <p>Programy, z ktorych krzystam:</p>
                 <ul>
@@ -69,7 +108,15 @@
                 <a href="resources/Ryszard_Niedzialek_CV.pdf">Pobierz Moje CV</a>
 
         </section>
-            
+        <hr>
+        <section id="contact" class="contact">
+            <h3>Kontakt</h3>
+            <p>Jeśli jesteś zainteresowany współpracą lub masz pytania, skontaktuj się ze mną:</p>
+            <ul>
+                <li>Email: <a href="mailto:ryszard.niedzielk@egmail.com">ryszard.niedzielk@example.com</a></li>
+            </ul>
+        </section>
+        
 
         <table border="5">
             <caption>Moje Umiejętności </caption>
@@ -86,5 +133,6 @@
 
        
          <script src="particles.js"></script>
+         <script src="textScroller.js"></script>
     </body>
 </html>
