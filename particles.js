@@ -61,7 +61,7 @@ function animate() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(191, 188, 188, 0.48)";
+        ctx.fillStyle = "rgba(9, 89, 88, 0.48)";
         ctx.fill();
 
         if (mouse.x !== null && mouse.y !== null) {
@@ -73,7 +73,7 @@ function animate() {
                 ctx.beginPath();
                 ctx.moveTo(p.x, p.y);
                 ctx.lineTo(mouse.x, mouse.y);
-                ctx.strokeStyle = `rgba(80, 80, 80, ${(1 - distance / mouse.radius) * 0.3})`;
+                ctx.strokeStyle = `rgba(10, 100, 80, ${(1 - distance / mouse.radius) })`;
                 ctx.lineWidth = 1;
                 ctx.stroke();
             }

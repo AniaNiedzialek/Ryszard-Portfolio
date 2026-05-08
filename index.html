@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryszard Niedzialek</title>
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link href="styles.css" rel="stylesheet">
     <link href="design.css" rel="stylesheet">
     <!-- <script src="script.js" defer></script> -->
@@ -16,19 +17,18 @@
     
 </head>
 <body>
-
-    <div class="content content--canvas"></div>
-     <!--  -->
-
-<!-- <button onclick="myFunction()">O Mnie</button> -->
-
+    <div class="cursor-ball"></div>
 
     <main class="page-content">
+        <section class="landing">
+            <!-- <div class="content content--canvas"></div> -->
 
-        <section class="my-introduction">
-            <h1 id="landing-info">Ryszard <br> Niedziałek</h1>
-            <hr>
-
+            <div class="my-introduction">
+                <h1 id="landing-info">Ryszard <br> Niedziałek</h1><hr>
+                <p id="intro-text">P O R T F O L I O</p>
+                
+            </div>
+        </section>
             <section class="text-scroller-section">
                 <div class="text-scroller">
                     <a class="scroller-word" href="#about">O Mnie</a>
@@ -48,7 +48,7 @@
                 w których realizuję swoją wizję innowacyjnych rozwiązań w obszarze bezzałogowych systemów technicznych, 
                 z naciskiem na funkcjonalność, precyzję i efektywność. </p><br>
                 <p>Zapraszam do zapoznania się z moim portfolio, które ilustruje moje umiejętności i podejście do projektowania
-                    systemów bezzałogowych.</p></section>
+                    systemów bezzałogowych.</p>
             </section>
             <hr>
             <section id="projects" class="projects">
@@ -129,10 +129,11 @@
         <footer>
             <p>© 2023 Ryszard Niedziałek. Wszelkie prawa zastrzeżone.</p>
         </footer>
-        </main>
+      
 
-       
-         <script src="particles.js"></script>
+    </main>                                                                                  
+         <!-- <script src="particles.js"></script> -->
          <script src="textScroller.js"></script>
+         <script src="drag-pointer.js"></script>
     </body>
 </html>
