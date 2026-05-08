@@ -192,7 +192,6 @@ body {
     position: relative;
     height: auto;
     width: 400px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -204,7 +203,7 @@ body {
 .scroller-word {
     font-weight: 400;
     font-size: 2em;
-    line-height: 1.1;
+    line-height: 1.5;
     color:rgb(247, 141, 3);
     opacity: 0.25;
     filter: blur(8px);
